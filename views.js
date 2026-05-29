@@ -75,7 +75,7 @@
           </div>
         </section>
         <div class="container"><div class="sale-banner reveal">
-          <div><strong>Flat 40% Off</strong> on premium carpets. Extra 10% with code IBRAHIM40. Free shipping ends tonight.</div>
+          <div><strong>Flat 40% Off</strong> on premium carpets. Extra 10% with code CARPET40. Free shipping ends tonight.</div>
           <div class="timer" id="heroTimer">${timerBoxes()}</div>
         </div></div>
         ${trustSection()}
@@ -118,7 +118,7 @@
           <p class="eyebrow">Today’s conversion offer</p>
           <h2>Buy premium texture now. Pay less than showroom pricing.</h2>
           <p class="lead">Direct-to-home pricing, seasonal inventory deals, and free shipping remove the usual friction from buying large carpets online.</p>
-          <div class="coupon-row"><span class="coupon">IBRAHIM40</span><button class="btn primary" onclick="applyCoupon('IBRAHIM40'); openCart()">Apply Coupon</button></div>
+          <div class="coupon-row"><span class="coupon">CARPET40</span><button class="btn primary" onclick="applyCoupon('CARPET40'); openCart()">Apply Coupon</button></div>
         </div>
         <div class="offer-panel reveal">
           <h3>Live store activity</h3>
@@ -151,7 +151,7 @@
             ${selectField("sortFilter", [["featured","Featured"],["priceLow","Price: Low to High"],["priceHigh","Price: High to Low"],["rating","Top Rated"],["discount","Best Discount"]], state.sort)}
             <button class="btn primary" onclick="clearFilters()">Reset</button>
           </div>
-          <div class="section-head reveal"><div><p class="eyebrow">${list.length} carpets found</p><h2>Ready-to-ship designs</h2></div><p>Use wishlist and comparison to shortlist, then checkout with IBRAHIM40 for extra savings.</p></div>
+          <div class="section-head reveal"><div><p class="eyebrow">${list.length} carpets found</p><h2>Ready-to-ship designs</h2></div><p>Use wishlist and comparison to shortlist, then checkout with CARPET40 for extra savings.</p></div>
           <div class="product-grid">${list.length ? list.map(productCard).join("") : `<div class="empty">No carpets match your filters.</div>`}</div>
           ${compareSection()}
         </div></section>`;
@@ -162,7 +162,7 @@
     }
 
     function pageTitle(title, text) {
-      return `<section class="page-title"><div class="container"><p class="eyebrow">Ibrahim Trading Co.</p><h1>${title}</h1><p>${text}</p></div></section>`;
+      return `<section class="page-title"><div class="container"><p class="eyebrow">Carpet Decors</p><h1>${title}</h1><p>${text}</p></div></section>`;
     }
 
     function productPage() {
@@ -224,7 +224,7 @@
 
     function cartPage() {
       return `
-        ${pageTitle("Shopping Cart", "Review your selected carpets, apply IBRAHIM40, and move to secure checkout.")}
+        ${pageTitle("Shopping Cart", "Review your selected carpets, apply CARPET40, and move to secure checkout.")}
         <section class="section"><div class="container"><div class="cart-layout">
           <div class="cart-list">${cartContent(false)}</div>
           ${summaryBox()}
@@ -291,7 +291,7 @@
         <section class="section"><div class="container">
           <div class="track-box reveal">
             <div class="form-grid">
-              <input class="field" id="trackInput" placeholder="Enter order ID, e.g. ITC48291">
+              <input class="field" id="trackInput" placeholder="Enter order ID, e.g. CDC48291">
               <button class="btn primary" onclick="showTracking()">Track Order</button>
             </div>
             <div id="trackingResult" class="track-steps">
@@ -322,7 +322,7 @@
 
     function aboutPage() {
       return `
-        ${pageTitle("About Ibrahim Trading Co.", "A modern carpet destination built around premium feel, transparent pricing, and buyer confidence.")}
+        ${pageTitle("About Carpet Decors", "A modern carpet destination built around premium feel, transparent pricing, and buyer confidence.")}
         <section class="section"><div class="container"><div class="info-grid">
           <div class="info-card reveal"><div class="icon">✦</div><h3>Curated Quality</h3><p>We shortlist carpets by texture, finish, durability, and room impact so buyers can choose faster.</p></div>
           <div class="info-card reveal"><div class="icon">₹</div><h3>Direct Pricing</h3><p>Our offer-led model simulates showroom-quality shopping with better online conversion value.</p></div>
@@ -348,7 +348,7 @@
           <div class="summary-box reveal">
             <h3>Store Support</h3>
             <p><strong>WhatsApp:</strong> +91 98765 43210</p>
-            <p><strong>Email:</strong> care@ibrahimtrading.example</p>
+            <p><strong>Email:</strong> care@carpetdecors.example</p>
             <p><strong>Hours:</strong> 10 AM to 8 PM</p>
             <button class="btn primary full" onclick="whatsapp()">Order on WhatsApp</button>
           </div>
@@ -373,7 +373,7 @@
     function newsletterSection() {
       return `<section class="section"><div class="container"><div class="newsletter reveal">
         <div><p class="eyebrow">Private sale access</p><h2>Get 10% extra off your first order.</h2><p>Join 18,000+ home buyers receiving limited carpet drops and size restock alerts.</p></div>
-        <div class="newsletter-form"><input class="field" placeholder="Enter email address"><button class="btn primary" onclick="alert('Offer unlocked: use IBRAHIM40 at checkout.')">Unlock Offer</button></div>
+        <div class="newsletter-form"><input class="field" placeholder="Enter email address"><button class="btn primary" onclick="alert('Offer unlocked: use CARPET40 at checkout.')">Unlock Offer</button></div>
       </div></div></section>`;
     }
 

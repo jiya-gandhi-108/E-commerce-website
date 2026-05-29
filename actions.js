@@ -39,9 +39,9 @@
 
     function applyCoupon(code) {
       state.coupon = (code || "").trim().toUpperCase();
-      if (state.coupon !== "IBRAHIM40") alert("Try IBRAHIM40 for an extra discount.");
+      if (state.coupon !== "CARPET40") alert("Try CARPET40 for an extra discount.");
       render();
-      showMiniMessage(state.coupon === "IBRAHIM40" ? "Coupon IBRAHIM40 applied" : "Coupon checked");
+      showMiniMessage(state.coupon === "CARPET40" ? "Coupon CARPET40 applied" : "Coupon checked");
     }
 
     function clearFilters() {
@@ -82,18 +82,18 @@
       saveState();
       state.route = "track";
       render();
-      alert("Order placed successfully. Your tracking ID is ITC48291.");
+      alert("Order placed successfully. Your tracking ID is CDC48291.");
     }
 
     function whatsapp() {
-      const text = encodeURIComponent("Hi Ibrahim Trading Co., I want help choosing a premium carpet.");
+      const text = encodeURIComponent("Hi Carpet Decors, I want help choosing a premium carpet.");
       window.open("https://wa.me/919876543210?text=" + text, "_blank");
     }
 
     function showMiniMessage(text) {
       const toast = document.getElementById("purchaseToast");
       const p = products[Math.floor(Math.random() * products.length)];
-      toast.innerHTML = `<img src="${p.img}" alt=""><p><strong>${text}</strong><br>Free shipping and IBRAHIM40 offer are active now.</p>`;
+      toast.innerHTML = `<img src="${p.img}" alt=""><p><strong>${text}</strong><br>Free shipping and CARPET40 offer are active now.</p>`;
       toast.classList.add("show");
       setTimeout(() => toast.classList.remove("show"), 2800);
     }
@@ -159,7 +159,7 @@
     document.getElementById("whatsappBtn").onclick = whatsapp;
     document.getElementById("exitClose").onclick = closeExit;
     document.getElementById("exitOverlay").onclick = closeExit;
-    document.getElementById("exitClaim").onclick = () => { closeExit(); applyCoupon("IBRAHIM40"); };
+    document.getElementById("exitClaim").onclick = () => { closeExit(); applyCoupon("CARPET40"); };
     document.addEventListener("mouseleave", e => { if (e.clientY <= 0) showExit(); });
     window.addEventListener("hashchange", () => {
       const route = location.hash.replace("#","");

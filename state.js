@@ -29,5 +29,5 @@
     const getProduct = id => products.find(p => p.id === Number(id));
     const cartQty = () => state.cart.reduce((sum, item) => sum + item.qty, 0);
     const cartSubtotal = () => state.cart.reduce((sum, item) => sum + getProduct(item.id).price * item.qty, 0);
-    const discount = () => state.coupon.toUpperCase() === "IBRAHIM40" ? Math.round(cartSubtotal() * .10) : 0;
+    const discount = () => state.coupon.toUpperCase() === "CARPET40" ? Math.round(cartSubtotal() * .10) : 0;
     const total = () => Math.max(0, cartSubtotal() - discount());
